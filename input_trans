@@ -1,0 +1,12 @@
+function y = input_trans(in)
+
+frame_label = in{1};
+frame = in{2};
+i = real(frame);
+q = imag(frame);
+I = transpose(i);
+Q = transpose(q);
+
+frame_real = cat(3,I,Q);
+y = {frame_label, frame_real};
+end
