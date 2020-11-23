@@ -1,0 +1,3 @@
+function y = import_frame(in)
+y = in(2);
+end
