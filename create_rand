@@ -1,0 +1,15 @@
+function result = create_rand(modType)
+ switch modType
+  case "BPSK"
+   result = randi([0 1],256,1);
+  case "QPSK"
+    result = randi([0 3],256,1);
+  case "8PSK"
+    result = randi([0 7],256,1);
+  case "16QAM"
+    result = randi([0 15],256,1);
+  case "64QAM"
+   result = randi([0 63],256,1);
+end
+end
+
